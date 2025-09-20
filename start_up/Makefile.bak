@@ -1,0 +1,5 @@
+Count:./src/Count.cpp ./src/Example.cpp ./src/Parser.cpp
+	g++ -std=c++17 -o ./bin/Count ./src/Example.cpp ./src/Parser.cpp ./src/Count.cpp -I./src
+
+clean:
+	rm ./bin/Count
