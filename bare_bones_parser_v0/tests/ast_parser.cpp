@@ -18,7 +18,7 @@ string parse(std::string &src)
   }
   else
   {
-   return "blongs";
+   return "belongs";
   }
 }
 
@@ -32,6 +32,6 @@ int main(int argc, char const *argv[])
   }
   std::string &src = input;
   string s = parse(src);
-  cout<<s<<endl;
+  cout<<s;
   return 0;
 }
