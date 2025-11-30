@@ -46,9 +46,9 @@ namespace ast
     variant<shared_ptr<Block>, Error> else_block;
 
   public:
-    If(variant<shared_ptr<Expr>, Error> test,
-       variant<shared_ptr<Block>, Error> then_block,
-       variant<shared_ptr<Block>, Error> else_block);
+    If(variant<shared_ptr<Expr>,  Error> test,
+       variant<shared_ptr<Block>,  Error> then_block,
+       variant<shared_ptr<Block>,  Error> else_block);
     shared_ptr<Expr> getTest();
     shared_ptr<Block> getThen();
     shared_ptr<Block> getElse();
